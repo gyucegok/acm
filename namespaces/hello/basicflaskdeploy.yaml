@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: basicflask
+  namespace: hello
+  labels:
+    app: basicflask
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: basicflask
+  template:
+    metadata:
+      labels:
+        app: basicflask
+    spec:
+      containers:
+        - name: basicflask
+          image: europe-west3-docker.pkg.dev/gyucegok5/gcr/basicflask:v1.0
+          ports:
+          - name: http-server
+            containerPort: 8080
+          env:
+          - name: PORT
+            value: "8080"
