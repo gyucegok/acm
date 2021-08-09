@@ -5,6 +5,7 @@ metadata:
   namespace: hello
   labels:
     app: basicflask
+    owner: gyucegok
 spec:
   replicas: 1
   selector:
