@@ -16,7 +16,7 @@ spec:
     metadata:
       labels:
         app: basicflask
-        color: black
+        color: grey
     spec:
       containers:
         - name: basicflask
