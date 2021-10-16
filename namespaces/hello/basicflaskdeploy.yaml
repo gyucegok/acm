@@ -6,7 +6,7 @@ metadata:
   labels:
     app: basicflask
     owner: gyucegok
-    coowner: zyucegok
+    coowner: ayucegok
 spec:
   replicas: 1
   selector:
